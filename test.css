@@ -38,6 +38,7 @@ p{
     width: 100%;
     position:absolute;
     z-index: 2;
+    top: 0px;
 }
 
 #todo{z-index: 4;
@@ -62,6 +63,9 @@ body{
     overflow-x: hidden;
     padding: 0px;
     margin: 0px;
+    background: url("img/corazones.gif") left repeat-y, url("img/corazones.gif") right repeat-y;
+    background-size: 100px;
+    
 }
 
 
