@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Test del Amor</title>
+</head>
+
+<body id="body">
+
+    <img id="fondo" src="img/fondito.gif">
+    <div id="todo">
+
+      <p><a href="#" id="logo"><img src="img/Captura de pantalla 2022-06-08 102306.png"></a></p>  
+       
+
+
+
+        <div id="form">
+
+            <p>Completa este formulario:</p>
+
+            <input id="nom1" type="text" placeholder=" Tú Nombre">
+            <input id="nom2" type="text" placeholder="Su Nombre">
+
+            <button id="boton">Hacer test</button>
+
+        </div>
+
+        <div id="resultado" class="res"></div>
+
+    </div>
+
+    <script>
+
+        $('#boton').click(() => {
+            // console.log('[+]Has pulsado el boton')
+
+            let nom1 = document.getElementById('nom1').value;
+            let nom2 = document.getElementById('nom2').value;
+
+            let numeroCompletamenteReal = Math.random(0, 100) * 100;
+
+            // console.log(`[+]Numero generado: ${numeroCompletamenteReal}`);
+
+            let resultado = document.getElementById('resultado');
+            // console.log(resultado)
+
+            setTimeout(() => {
+
+                resultado.innerHTML = `
+                <p>
+                    ${nom1} y ${nom2} son un ${parseInt(numeroCompletamenteReal)}% compatibles. 
+                </p>
+                    `;
+            }, 3000);
+            
+            let text = document.getElementById("resultado");
+              
+              text.innerHTML="Cargando.";
+              text.style.opacity = 1;
+              
+              setTimeout(function()
+              {
+              text.innerHTML="Cargando..";
+              },1000);
+              
+              setTimeout(function()
+              {
+              text.innerHTML="Cargando...";
+              },2000);
+          }
+        );
+
+
+    $('#logo').click(()=>{
+        window.location.reload();
+    })
+
+    </script>
+
+</body>
+
+</html>
