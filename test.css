@@ -87,3 +87,25 @@ body{
     right: -10%;
     left: 40%;
 }
+
+/** para movil*/ 
+
+@media screen and (max-width: 800px) {
+
+body{
+     width: 100px;
+    height: 100px;
+}
+
+#logo{
+    width: 20%;
+    text-align: center;
+
+}
+
+
+
+
+
+
+}
