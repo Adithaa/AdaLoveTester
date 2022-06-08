@@ -9,11 +9,13 @@ p{
 }
 
 #form{ 
+   
     padding: 1%;
     font-size: 50px;
     border-radius: 50px;
     border:solid rgb(255, 177, 232);
     z-index: 4;  
+    width:100%
 }
 
 #form input{
@@ -22,6 +24,10 @@ p{
     margin-left: 21%;
     border:solid rgb(170, 170, 170);
     border-radius: 15px;
+    display:Flex;
+    Justify-content: center;
+    align-items: center;
+    width:25%;
     
 }
 
